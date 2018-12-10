@@ -69,6 +69,13 @@
             "showCasteSameAsLastNameCheckbox": false,
             "showStartVisitButton": true,
             "mandatoryPersonAttributes": ["Patient phone number 1"],
+            "printOptions": [
+            {
+                "translationKey": "REG_CARD_PRINT",
+                "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/print.html",
+                "shortcutKey": "p"
+            }
+            ],
             "conceptSetUI": {
                 "REGISTRATION FEES": {
                     "required": true,
@@ -90,11 +97,16 @@
                 "address1" : {"pattern" : "[a-zA-Z0-9\\s]{2,}", "errorMessage" : "Should contain at least 2 characters"}
             },
                "patientSearch": {
-                "address": {
+                  "address": {
                     "label": "Address",
                     "placeholder": "Enter Address",
                     "field": "address2"
-                }
-        }
+                  },
+		"customAttributes": {
+    			"label": "PhoneNumber",
+    			"placeholder":"Enter PhoneNumber1",
+    			"fields": ["Patient phone number 1"]
+  		}
+       }
    }
 }
