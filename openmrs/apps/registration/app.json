@@ -68,7 +68,7 @@
             "disablePhotoCapture": true,
             "showCasteSameAsLastNameCheckbox": false,
             "showStartVisitButton": true,
-            "mandatoryPersonAttributes": ["Patient phone number 1"],
+            "mandatoryPersonAttributes": ["Patient phone number 1","HospitalID"],
             "printOptions": [
             {
                 "translationKey": "REG_CARD_PRINT",
@@ -90,7 +90,7 @@
             },
             "fieldValidation" : {
                 "address1" : {"pattern" : "[a-zA-Z0-9\\s]{2,}", "errorMessage" : "Should contain at least 2 characters"},
-               "HospitalID":{ "pattern" :"^[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}$", "errorMessage" : "Should be in this pattern"}
+               "HospitalID":{ "pattern" :"^[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}$", "errorMessage" : "Should be in 000-000-000-0 pattern"}
             },
                "patientSearch": {
                   "address": {
