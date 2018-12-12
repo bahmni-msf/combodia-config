@@ -89,9 +89,6 @@
                 }
             },
             "fieldValidation" : {
-                "familyName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
-                "givenName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
-                "middleName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
                 "address1" : {"pattern" : "[a-zA-Z0-9\\s]{2,}", "errorMessage" : "Should contain at least 2 characters"},
                "HospitalID":{ "pattern" :"^[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}$", "errorMessage" : "Should be in this pattern"}
             },
