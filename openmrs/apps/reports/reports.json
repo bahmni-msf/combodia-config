@@ -656,5 +656,12 @@
         "Patient Identifier"
       ]
     }
-  }
+  },
+    "MissedAppointmentsRepot": {
+        "name": "Appointment Scheduling - Missed appointments",
+        "type": "MRSGeneric",
+        "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/missedAppointments.sql"
+        }
+    }
 }
