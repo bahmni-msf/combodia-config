@@ -657,11 +657,19 @@
       ]
     }
   },
-    "MissedAppointmentsRepot": {
+    "MissedAppointmentsReport": {
         "name": "Appointment Scheduling - Missed appointments",
         "type": "MRSGeneric",
         "config": {
             "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/missedAppointments.sql"
         }
+    },
+    "ScheduledToArrive": {
+        "name": "Appointment Scheduling - Scheduled appointments",
+        "type": "MRSGeneric",
+        "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/scheduledAppointments.sql"
+        }
     }
+
 }
