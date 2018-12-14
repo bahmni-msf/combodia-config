@@ -18,6 +18,16 @@
     "icon": "fa fa-calendar",
     "order": 2,
     "requiredPrivilege": "app:appointments"
+  },
+  "reports": {
+    "id": "bahmni.reports",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_REPORTS_KEY",
+    "url": "../reports/#/dashboard",
+    "icon": "fa-user",
+    "order": 3,
+    "requiredPrivilege": "app:reports"
   }
 
 }
