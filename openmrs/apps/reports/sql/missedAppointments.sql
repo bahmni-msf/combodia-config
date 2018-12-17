@@ -1,4 +1,4 @@
-SELECT patient_identifier.identifier AS ID, concat(person_name.given_name,' ',person_name.family_name) AS Name, person_attribute.value AS PhoneNumber,appointment_service.name AS ServiceType
+SELECT patient_identifier.identifier AS ID, concat(person_name.given_name,' ',person_name.family_name) AS Name, person_attribute.value AS PhoneNumber,appointment_service.name AS ServiceType,DATE(patient_appointment.start_date_time) AS DateOfAppointment
 FROM patient_appointment
 
 JOIN
