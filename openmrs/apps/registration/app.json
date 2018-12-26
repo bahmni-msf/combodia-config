@@ -96,8 +96,8 @@
             },
                "patientSearch": {
                   "address": {
-                    "label": "District",
-                    "placeholder": "Enter Address",
+                    "label": "Address",
+                    "placeholder": "Enter District",
                     "field": "address2"
                   },
 		"customAttributes": {
