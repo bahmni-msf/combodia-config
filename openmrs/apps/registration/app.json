@@ -90,11 +90,13 @@
             },
             "fieldValidation" : {
                 "address1" : {"pattern" : "[a-zA-Z0-9\\s]{2,}", "errorMessage" : "Should contain at least 2 characters"},
-               "HospitalID":{ "pattern" :"^[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}$", "errorMessage" : "Should be in 000-000-000-0 pattern"}
+               "HospitalID":{ "pattern" :"^[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}$", "errorMessage" : "Should be in 000-000-000-0 pattern"},
+              "Patient phone number 1":{"pattern":"^\\d{9,10}$", "errorMessage" : "Allows only 9 or 10 digits"},
+              "Other phone number":{"pattern":"^\\d{9,10}$", "errorMessage" : "Allows only 9 or 10 digits"}
             },
                "patientSearch": {
                   "address": {
-                    "label": "Address",
+                    "label": "District",
                     "placeholder": "Enter Address",
                     "field": "address2"
                   },
