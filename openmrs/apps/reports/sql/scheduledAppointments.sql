@@ -1,12 +1,12 @@
 SELECT 
 patient_identifier.identifier AS ID, 
 concat(person_name.given_name,' ',person_name.family_name) AS Name, 
-person_attribute.value AS PhoneNumber,appointment_service.name AS ServiceType, 
-DATE(patient_appointment.start_date_time) AS DateOfAppointment,
+person_attribute.value AS "Phone Number",appointment_service.name AS "Service Type",
+DATE(patient_appointment.start_date_time) AS "Date Of Scheduled Appointment",
 (case when pat.patient_appointment_id < patient_appointment.patient_appointment_id  then case when pat.patient_appointment_id < patient_appointment.patient_appointment_id
-then pat.status else null end else null end) as "PreviousAppointmentStatus",
+then pat.status else null end else null end) as "Previous Appointment Status",
 (case when pat.patient_appointment_id < patient_appointment.patient_appointment_id  then case when pat.patient_appointment_id < patient_appointment.patient_appointment_id
-then date(pat.start_date_time) else null end else null end) as "PreviousAppointmentDate"
+then date(pat.start_date_time) else null end else null end) as "Date Of Previous Appointment"
 FROM patient_appointment
 join patient_appointment pat on pat.patient_id=patient_appointment.patient_id
 JOIN
