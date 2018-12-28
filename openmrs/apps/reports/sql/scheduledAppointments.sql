@@ -1,6 +1,6 @@
 SELECT 
-patient_identifier.identifier AS ID, 
-concat(person_name.given_name,' ',person_name.family_name) AS Name, 
+patient_identifier.identifier AS "Patient ID",
+concat(person_name.given_name,' ',person_name.family_name) AS "Patient Name",
 person_attribute.value AS "Phone Number",appointment_service.name AS "Service Type",
 DATE(patient_appointment.start_date_time) AS "Date Of Scheduled Appointment",
 (case when pat.patient_appointment_id < patient_appointment.patient_appointment_id  then case when pat.patient_appointment_id < patient_appointment.patient_appointment_id
