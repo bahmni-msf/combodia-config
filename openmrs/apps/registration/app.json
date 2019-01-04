@@ -20,7 +20,7 @@
               "forwardUrlsForVisitTypes": [
                {
                    "visitType": "OPD",
-                   "forwardUrl": "../appointments/#/home/manage/summary",
+                   "forwardUrl": "../appointments/#/home/manage/appointments/calendar/new",
                    "translationKey": "Start OPD Visit",
                    "shortcutKey": "c"
                }],
