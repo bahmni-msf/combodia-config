@@ -1,73 +1,76 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/print.css"/>
 <table border="1" cellpadding="0" cellspacing="1" class="registrationCard-print-table">
     <tbody>
-     <div class="center"><span>Registration Print</span></div>
-<br/>
+    <div class="center"><span>Registration Print</span></div>
+<hr>
+    <br/>
 
-<div>
-    <div class="row">
-        <div class="left">
-            <span class="label">Patient ID :</span>
-            <span class="bold">{{patient.primaryIdentifier.identifier}}</span>
-        </div>
-        <div class="right col">
-                <span class="label">Patient Name :</span>
+    <div>
+        <div class="row">
+            <div class="left">
+                <span class="label">Patient ID:</span>
+                <span class="bold">{{patient.primaryIdentifier.identifier}}</span>
+            </div>
+
+            <div class="left">
+                <span class="label">Patient Name  :</span>
                 <span class="bold">{{patient.givenName}} {{patient.middleName}} {{patient.familyName}} </span>
             </div>
             <div class="row">
-        <div class="left">
-            <span class="label">Gender :</span>
-            <span class="bold">{{patient.primaryIdentifier.identifier}}</span>
-        </div>
-         <div class="right col">
-                <span class="label">Date of Birth :</span>
-                <span class="bold">{{patient.birthdate | date:'dd/MM/yyyy'}}</span>
-            </div>
-         </br>
-          <div class="left">
-            <span class="label">Village :</span>
-            <span class="bold">{{patient.address.address4}}</span>
-        </div>
-         <div class="right col">
-                <span class="label">Commune :</span>
-                <span class="bold">{{patient.address.address3}}</span>
-            </div>
-            <div class="left">
-                <span class="label">District</span>
-                <span class="bold">{{patient.address.address2}} </span>
-            </div>
-<div class="row">
-            <div class="right col">
-                <span class="label">Province/city :</span>
-                <span class="bold">{{patient.address.address1}}</span>
-            </div>
-              <div class="left">
-                <span class="label">Hospital ID</span>
-                <span class="bold">{{patient.extraIdentifiers[0].identifier}} </span>
-            </div>
-<div class="row">
-            <div class="right col">
-                <span class="label">Patient phone number 1 :</span>
-                <span class="bold">{{patient["Patient phone number 1"]}}</span>
-            </div>
-             <div class="left">
-                <span class="label">Other phone number :</span>
-                <span class="bold">{{patient['Other phone number']}} </span>
-            </div>
-<div class="row">
-            <div class="right col">
-                <span class="label">Health coverage :</span>
-                <span class="bold">{{patient["Health coverage"].value}}</span>
-            </div>
-             <div class="left">
-                <span class="label">Health ID number :</span>
-                <span class="bold">{{patient['Health ID number']}} </span>
-            </div>
-            <div class="right col">
-                    <span class="label">Registration Date :</span>
-                    <span class="bold">{{today | date:'dd/MM/yyyy'}}</span>
+                <div class="left">
+                <span class="label">Gender  :</span>
+                    <span class="bold">{{patient.primaryIdentifier.identifier}}</span>
                 </div>
-        </div>
-        </div>
+                <div class="left">
+                <span class="label">Date of Birth :</span>
+                    <span class="bold">{{patient.birthdate | date:'dd/MM/yyyy'}}</span>
+                </div>
+                </br>
+                 </div>
+                <div class="left">
+                <span class="label">Village :</span>
+                    <span class="bold">{{patient.address.address4}}</span>
+                </div>
+                <div class="left">
+                <span class="label">Commune  :</span>
+                    <span class="bold">{{patient.address.address3}}</span>
+                </div>
+                <div class="left">
+                <span class="label">District  :</span>
+                    <span class="bold">{{patient.address.address2}} </span>
+                </div>
+                <div class="row">
+                    <div class="left">
+                <span class="label">Province/city :</span>
+                        <span class="bold">{{patient.address.address1}}</span>
+                    </div>
+                    <div class="left">
+                <span class="label">Hospital ID :</span>
+                        <span class="bold">{{patient["HospitalID"]}} </span>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                <span class="label">Patient phone number 1 :</span>
+                            <span class="bold">{{patient["Patient phone number 1"]}}</span>
+                        </div>
+                        <div class="left">
+                <span class="label">Other phone number :</span>
+                            <span class="bold">{{patient['Other phone number']}} </span>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                 <span class="label">Health coverage:</span>
+                                <span class="bold">{{patient["Health coverage"].value}}</span>
+                            </div>
+                            <div class="left">
+                 <span class="label">Health ID number      :</span>
+                                <span class="bold">{{patient['Health ID number']}} </span>
+                            </div>
+                            <div class="left">
+                 <span class="label">Registration Date      :</span>
+                                <span class="bold">{{today | date:'dd/MM/yyyy'}}</span>
+                            </div>
+                        </div>
+                    </div>
     </tbody>
 </table>
