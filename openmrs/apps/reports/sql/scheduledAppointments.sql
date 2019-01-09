@@ -1,5 +1,4 @@
 SELECT
-patient_identifier.patient_id,
 patient_identifier.identifier AS "Patient ID",
 concat(person_name.given_name,' ',person_name.family_name) AS "Patient Name",
 person_attribute.value AS "Phone Number",appointment_service.name AS "Service Type",
