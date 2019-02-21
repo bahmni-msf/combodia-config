@@ -41,7 +41,3 @@
     group: bahmni
     owner: bahmni
 
-- name: Start openmrs service
-  service:
-    name: openmrs
-    state: started
