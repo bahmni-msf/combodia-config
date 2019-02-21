@@ -1,0 +1,8 @@
+--- 
+- 
+  become: true
+  hosts: bahmni-emr
+  roles: 
+    - 
+      role: bahmni-emr
+
